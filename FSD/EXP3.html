@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1 id="hdng">Showcasing DOM</h1>
+    <p id="currTime"> </p>
+    <p>Displaying Image:-</p>
+    <img id="DemoImg" src = "S.jpg">
+    <br></br>
+    <button type ="button" id="chimg" onclick="chImg()">what color is your bugatti </button>
+    <br></br>
+    <button type ="button" id="chhdng" onclick="chhdng()">Change Heading</button>
+    <script>
+
+
+    function chImg()
+    {
+
+        document.getElementById("DemoImg").src = "R.jpg";
+    }
+    function chhdng()
+    {
+
+      document.getElementById("hdng").style.color = "green";
+    }
+
+  </script>
