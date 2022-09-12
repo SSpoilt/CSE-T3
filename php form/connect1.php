@@ -13,6 +13,7 @@ if($conn->connect_error){
   $execval = $stmt->execute();
   echo $execval;
   echo "login successfully...";
+  header("Location: http://localhost/registration.html");
   $stmt->close();
   $conn->close();
 }
