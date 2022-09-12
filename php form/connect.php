@@ -17,6 +17,7 @@
 		$execval = $stmt->execute();
 		echo $execval;
 		echo "Registration successfully...";
+		header("Location: http://localhost/index.html");
 		$stmt->close();
 		$conn->close();
 	}
